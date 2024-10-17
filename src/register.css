@@ -1,0 +1,74 @@
+/* Register Page Styles */
+.register-container {
+    background-color: #ffffff; /* Clean white background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px;
+    margin: 50px auto; /* Center the form on the page */
+    text-align: center; /* Center text */
+  }
+  
+  h2 {
+    color: #ff5722; /* Vibrant orange color */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Use simple, clean font */
+    font-size: 28px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left; /* Align labels to the left */
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #ff5722; /* Orange border on focus */
+  }
+  
+  .register-button {
+    background-color: #ff5722; /* Orange button */
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .register-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .register-container {
+      padding: 30px;
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+  

@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light background for a fresh look */
+  color: #333; /* Dark text for better readability */
+}
+
+/* Main App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #ff5722; /* Vibrant orange header */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* For positioning cart link */
+}
+
+/* Search Bar */
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px; /* Width for search bar */
+  border: none; /* No border for a cleaner look */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Cart Link */
+.cart-link {
+  position: absolute; /* Position the cart link */
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff; /* White cart link */
+  color: #ff5722; /* Orange text */
+  padding: 10px;
+  text-decoration: none;
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Cart link hover effect */
+.cart-link:hover {
+  background-color: #ffe0b2; /* Light orange on hover */
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items at the start */
+  margin: 20px 0;
+  gap: 20px; /* Add spacing between items */
+}
+
+/* Product Card Styles */
+.product {
+  background-color: #ffffff; /* White product card */
+  border-radius: 15px; /* Rounded corners */
+  padding: 15px;
+  width: 250px; /* Fixed width for uniformity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+/* Product Card Hover Effect */
+.product:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Product Image */
+.product img {
+  width: 100%; /* Full width image */
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Product Title and Price */
+.product h3 {
+  color: #ff5722; /* Vibrant orange for titles */
+}
+
+.product p {
+  margin: 5px 0; /* Spacing for descriptions */
+}
+
+/* Rating Stars */
+.rating {
+  color: #ffb400; /* Gold color for stars */
+}
+
+/* Button Styles */
+button, .bid-button {
+  background-color: #ff5722; /* Vibrant orange button */
+  color: #ffffff; /* White text */
+  border: none; /* No border for buttons */
+  padding: 10px 15px; /* Padding for buttons */
+  border-radius: 25px; /* Rounded button edges */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background change */
+  margin-top: 10px; /* Spacing above buttons */
+}
+
+/* Button Hover Effect */
+button:hover, .bid-button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Product Page Styling */
+.product-page {
+  margin: 20px auto; /* Center the page */
+  padding: 20px;
+  background-color: #ffffff; /* White background for product page */
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 400px; /* Maximum width for better readability */
+}
+
+/* Input Fields */
+input[type="number"] {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #dddddd; /* Light gray border for input */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Cart Page Styling */
+.cart-page {
+  padding: 20px;
+}
+
+.cart-page h2 {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .product-list {
+    flex-direction: column; /* Stack products on smaller screens */
+    align-items: center; /* Center items on mobile */
+  }
+  .product {
+    width: 90%; /* Full width for mobile */
+  }
+  input[type="text"] {
+    width: 80%; /* Wider search bar on mobile */
+  }
+}
+
+
+/* Register Form Styles */
+.register-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+  color: #ff5722;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e64a19;
+}
